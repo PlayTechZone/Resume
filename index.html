@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-file-alt"></i> Resume Builder</h1>
+        <form id="resumeForm">
+            <label for="name"><i class="fas fa-user"></i> Name:</label>
+            <input type="text" id="name" placeholder="Your Full Name" required>
+
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" placeholder="Your Email Address" required>
+
+            <label for="phone"><i class="fas fa-phone"></i> Phone:</label>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+
+            <label for="education"><i class="fas fa-graduation-cap"></i> Education:</label>
+            <input type="text" id="education" placeholder="Your Highest Qualification" required>
+
+            <label for="experience"><i class="fas fa-briefcase"></i> Work Experience:</label>
+            <textarea id="experience" placeholder="Briefly Describe Your Work Experience" required></textarea>
+
+            <label for="skills"><i class="fas fa-lightbulb"></i> Skills:</label>
+            <textarea id="skills" placeholder="List Your Skills" required></textarea>
+
+            <button type="button" class="btn-primary" onclick="generateResume()">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume" style="display: none;">
+        <div class="resume-box">
+            <h2>Generated Resume</h2>
+            <div id="resumeContent"></div>
+            <button class="btn-download" onclick="downloadPDF()"><i class="fas fa-download"></i> Download Resume</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

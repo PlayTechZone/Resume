@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+/* Container Styling */
+.container, .resume-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+h1 i {
+    margin-right: 10px;
+}
+/* Form Labels and Inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+/* Buttons */
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-download {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+.btn-download:hover {
+    background-color: #1976D2;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/* Resume Box */
+.resume-box {
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
